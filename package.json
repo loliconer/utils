@@ -34,8 +34,22 @@
     "not ie_mob > 0"
   ],
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.9.0",
+    "babel-preset-env": "^1.7.0",
     "jest": "^24.9.0",
+    "jest-transform-stub": "^2.0.0",
     "rollup": "^1.27.0",
     "terser": "^4.4.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(css|less)$": "jest-transform-stub"
+    }
   }
 }
