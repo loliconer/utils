@@ -1,0 +1,41 @@
+{
+  "name": "@lovue/utils",
+  "version": "1.0.0",
+  "description": "Some utils for development.",
+  "main": "dist/utils.common.js",
+  "module": "dist/utils.esm.js",
+  "unpkg": "dist/utils.min.js",
+  "scripts": {
+    "build": "rollup -c && terser dist/utils.js -o dist/utils.min.js -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loliconer/utils.git"
+  },
+  "author": "loliconer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/loliconer/utils/issues"
+  },
+  "homepage": "https://github.com/loliconer/utils#readme",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "engines": {
+    "node": ">= 10.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie > 0",
+    "not ie_mob > 0"
+  ],
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "rollup": "^1.27.0",
+    "terser": "^4.4.0"
+  }
+}
