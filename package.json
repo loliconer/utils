@@ -28,19 +28,18 @@
     "npm": ">= 6.0.0"
   },
   "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie > 0",
-    "not ie_mob > 0"
+    "Chrome >= 70",
+    "Firefox >= 65",
+    "Safari >= 10"
   ],
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-jest": "^24.9.0",
+    "babel-jest": "^26.0.1",
     "babel-preset-env": "^1.7.0",
-    "jest": "^24.9.0",
+    "jest": "^26.0.1",
     "jest-transform-stub": "^2.0.0",
-    "rollup": "^1.32.1",
-    "terser": "^4.6.7"
+    "rollup": "^2.11.2",
+    "terser": "^4.7.0"
   },
   "jest": {
     "moduleFileExtensions": [
